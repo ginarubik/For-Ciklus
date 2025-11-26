@@ -1,0 +1,40 @@
+package hu.progmasters.javastart.module_02.day2_for_ciklus.gyakorlatok;
+
+import java.util.Scanner;
+
+public class H_Fibonacci
+{
+    public static void main(String[] args)
+    {
+        /*
+        Fibonacci számsornak nevezzük azt az egész számokból álló számsort, aminek a 0. eleme: 0, az 1. eleme: 1
+        és minden további eleme az előző két elem összege. Kérj be egy pozitív egész számot, legyen a neve n.
+        Határozd meg és írd ki a konzolra 0 indextől n indexig a Fibonacci számsort.
+        Példa bemenet: 10
+        Kimenet:  0 1 1 2 3 5 8 13 21 34 55
+         */
+
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        int elso = 0;
+        int masodik = 1;
+        int next = 0;
+
+        if (n>=0) {
+            System.out.println(elso + " ");
+        }
+        if (n>=0) {
+            System.out.println(masodik + " ");
+        }
+
+        for (int i=2; i<=n; i++) {
+            next=elso+masodik;
+            System.out.println(next);
+            elso=masodik;
+            masodik=next;
+        }
+
+
+    }
+}
