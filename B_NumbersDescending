@@ -1,0 +1,15 @@
+public class B_NumbersDescending {
+    public static void main(String[] args) {
+        /*
+        Vegyél fel egy max nevű, int típusú változót és adj neki értéket.
+        Írd ki a pozitív egész számokat csökkenő sorrendben, max értékétől kezdve.
+        A max változó is legyen kiírva, a nulla viszont már nem.
+         */
+
+        int max = 15;
+
+        for (int i = max; i > 0; i--) {
+            System.out.println(i);
+        }
+    }
+}
