@@ -13,6 +13,44 @@ public class F_CountVowels {
                 "sapien a, vehicula egestas purus. Aliquam blandit urna elit, a tempus tellus blandit sit amet. " +
                 "Ut lacinia rhoncus lacus, eu tincidunt magna convallis vitae. Nulla facilisi. Donec sed facilisis ex." +
                 " Curabitur non risus ex.";
+Solution 1
+
+package hu.progmasters.javastart.module_02.day2_for_ciklus.gyakorlatok;
+
+public class F_CountVowels {
+    public static void main(String[] args) {
+        /*
+            Számoljuk meg, hány magánhangzó van az alábbi String-ben. Ékezetes karakterek nincsenek a szövegben,
+            a kis- és nagybetűként is számoljuk bele.
+            tipp: length(), charAt(i)
+         */
+
+        String loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus ut ipsum sed tincidunt." +
+                " Phasellus in tincidunt massa, in gravida tellus. Duis ut urna non tortor pharetra porttitor in in " +
+                "risus. Donec at orci nec neque posuere dapibus quis lacinia justo. Nullam id iaculis sem, vitae " +
+                "tincidunt nisi. Pellentesque egestas semper nibh id elementum. Pellentesque orci urna, molestie eu " +
+                "sapien a, vehicula egestas purus. Aliquam blandit urna elit, a tempus tellus blandit sit amet. " +
+                "Ut lacinia rhoncus lacus, eu tincidunt magna convallis vitae. Nulla facilisi. Donec sed facilisis ex." +
+                " Curabitur non risus ex.";
+
+        int darab = 0;
+
+        for (int i = 0; i < loremIpsum.length(); i++) {
+            char c = Character.toLowerCase(loremIpsum.charAt(i));
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                darab++;
+            }
+        }
+
+        System.out.println("Magánhangzók száma: " + darab);
+
+
+
+    }
+}
+
+
+Solution 2
 
         int count = 0;
 
