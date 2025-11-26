@@ -1,0 +1,13 @@
+public class D_OddNumbers {
+    public static void main(String[] args) {
+        /*
+        Írd ki a páratlan pozitív egész számokat (egytől indítva) a max változóban megadott számig!
+        A változóban megadott szám is legyen kiírva, ha páratlan!
+        */
+        int max = 21;
+
+        for (int i = 1; i <= max; i += 2) {
+            System.out.println(i);
+        }
+    }
+}
