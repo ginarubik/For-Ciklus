@@ -1,0 +1,33 @@
+public class I_veGotThePower {
+    public static void main(String[] args) {
+        /*
+        Kérj be 2 egész számot a konzolról. Számold ki az első szám második számbeli hatványát.
+        Működjön negatív hatvánnyal is. Negatív hatvány számítása: x^(-n) = 1 / x^n
+        Példa1 bemenet: 2 10
+        Kimenet: 1024.0
+
+        Példa2 bemenet 2 -1
+        Kimenet: 0.5
+         */
+
+    }
+}
+Scanner scanner = new Scanner(System.in);
+    System.out.println("Adj meg két egész számot");
+    int first = scanner.nextInt();
+    int second = scanner.nextInt();
+
+    double result;
+    if (second >= 0) {
+        result = 1;
+        for (int i = 0; i < second; i++) {
+            result *= first;
+        }
+    } else {
+        result = 1;
+        for (int i = 0; i < -second; i++) {
+            result *= first;
+        }
+        result = 1.0 / result;
+    }
+    System.out.println(result);
