@@ -1,0 +1,25 @@
+package hu.progmasters.javastart.module_02.day2_for_ciklus.gyakorlatok;
+
+import java.util.Scanner;
+
+public class G_Factorial {
+    public static void main(String[] args) {
+        /*
+        Írj egy programot, ami kiszámolja a konzolról bekért pozitív egész szám faktoriálisát. n faktoriálisa 1*2*3*...*n
+        Példa:
+        bemenet: 4
+        kimenet: 24
+         */
+
+    int b=1;
+
+    Scanner scanner = new Scanner(System.in);
+    int maxi = scanner.nextInt();
+
+    for (int i=1; i<=maxi; i++)
+    {
+        b=b*i;
+    }
+        System.out.println(b);
+}
+}
